@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-cal-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap" rel="stylesheet">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Add a Calendar</title>
+</head>
+<body> 
+      <header class="navbar">
+          <div class="navbar_image">
+              <img class="logo"src="photos\Logo (1) 1.png" alt="">
+            </div>
+          <nav class="menu">
+              <ul class="nav_links">
+              <li><a class="nav_link" href="">Home</a></li>
+              <li><a class="nav_link" href="about-me">About Us</a></li>
+              <li><a class="nav_link" href="contact-me">Contact Us</a></li>
+            </ul>
+        </nav>
+      </header>
+
+      <h1 class="calendarPrompt">Enter your Calendar iCal Link and Name</h1>
+
+      <div class="addbar">
+        <input placeholder = "Calendar Name" type="text" id = "calendarName" class="calendarName">
+        <input placeholder = "Calendar Link" type="text" id = "calendarLink" class="calendarLink">
+        <button id = "submit" class="submit">Submit</button>
+        <script>
+          document.getElementById("submit").onclick = function(){
+            var calendarInfo = document.getElementById("calendarDisplay").value + document.getElementById("calendarName").value + "\t";
+            document.getElementById("calendarDisplay").value = calendarInfo;
+          }
+        </script>
+      </div>
+
+      <div class="calendarDisplays" id="calendarDisplays"> 
+        <input type="text" class="calendarDisplay" id="calendarDisplay" placeholder = "Your Calendars" readonly = "true">
+      </div>
+
+      <div class="deploy">
+        <button class="deployButton"><a target="_blank", href = "https://discord.com/api/oauth2/authorize?client_id=1098833327449964634&permissions=8&scope=bot">Deploy!</a></button>
+      </div>
+
+    </div>
+  
+</body>
+</html>
