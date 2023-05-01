@@ -1,2 +1,2 @@
 # SkedgeBot
-# SkedgeBot
+## We are a group of Computer Science and Software Engineering students at the University of Texas at Dallas looking to help people organize their everyday life through a single application. SkedgeBot is a discord chat bot that will connect to all time-sensitive technologies a student may use to keep themselves organized such as eLearning, Google Calendar, Outlook Calendar, and Notion. SkedgeBot relieves the stress of keeping track of various schedules and speeds up the process of scheduling new tasks or events. SkedgeBot will be an easy way for people to stay on top of their work. 
